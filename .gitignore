@@ -11,6 +11,9 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
+udagram-api-user/node_modules/
+udagram-api-feed/node_modules/
+udagram-frontend/node_modules/
 
 .idea/
 .ionic/
