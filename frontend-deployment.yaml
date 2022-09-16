@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-frontend
+  labels:
+    app: udagram-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: udagram-frontend
+  template:
+    metadata:
+      labels:
+        app: udagram-frontend
+    spec:
+      containers:
+      - name: udagram-frontend
+        image: dmt130/udagram-frontend
+        ports:
+        - containerPort: 8100
+        imagePullPolicy: Always
+        envFrom:
+        - configMapRef:
+            name: aws-services-details
+        volumeMounts:
+            - mountPath: '/root/.aws/'
+              name: aws-iam-cred
+              readOnly: true
+      volumes:
+        - name: aws-iam-cred
+          secret:
+            secretName: aws-secret
