@@ -11,4 +11,4 @@ spec:
       protocol: TCP
   type: ClusterIP
   selector:
-    run: backend-user
+    run: udagram-api-user
