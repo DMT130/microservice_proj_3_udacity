@@ -5,7 +5,7 @@ metadata:
   name: aws-services-details # Name of the secret
   namespace: default # Namespace of the secret
 data:
-  POSTGRES_HOST: dmpostgressdb.cpaeavbjq2dv.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: dmtpostgress.ciptnptsa1dw.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: dmbucktimane
   AWS_REGION: us-east-1
