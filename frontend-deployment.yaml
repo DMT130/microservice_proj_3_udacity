@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: dmt130/udagram-frontend
+        image: dmt130/udagram-frontend:v1
         ports:
-        - containerPort: 8100
+        - containerPort: 80
         imagePullPolicy: Always
         envFrom:
         - configMapRef:

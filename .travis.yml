@@ -32,4 +32,4 @@ after_success:
   - docker push dmt130/udagram-api-feed:v1
   - docker push dmt130/udagram-api-user:v1
   - docker push dmt130/reverseproxy:v1
-  - docker push dmt130/udagram-frontend:v2
+  - docker push dmt130/udagram-frontend:v1

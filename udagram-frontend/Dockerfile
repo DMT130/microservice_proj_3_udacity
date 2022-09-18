@@ -11,6 +11,5 @@ COPY . .
 RUN ionic build
 ## Run 
 FROM nginx:alpine
-EXPOSE 8100
 #COPY www /usr/share/nginx/html
 COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
